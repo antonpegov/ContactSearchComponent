@@ -1,0 +1,16 @@
+{
+  "name": "adressbook",
+  "version": "1.0.0",
+  "description": "Simple Adress Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"lite-server\" \"json-server -p 4000 data.js\""
+  },
+  "author": "Anton Pegov",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "faker": "^4.1.0"
+  }
+}
