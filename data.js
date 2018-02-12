@@ -3,12 +3,14 @@ module.exports = function(){
   const people = [];
   for (let n = 0; n < 100; n+=1) {
     people.push({
-      id: n,
+      key: n,
       fname: faker.name.firstName(),
       lname: faker.name.lastName(),
       avatar: faker.internet.avatar(),
       phone: faker.phone.phoneNumber(),      
-      adress: `${faker.address.city()} ${faker.address.streetAddress()}`
+      adress: faker.address.streetAddress(),
+      city: faker.address.city()
     })
   }
+  return {people};
 }

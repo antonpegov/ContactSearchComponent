@@ -1,4 +1,4 @@
-# Simple Adress Book with Jason-Server fake beckend
+# Contact Search component showcase with 'json-server' fake backend
 
 
 ## Install

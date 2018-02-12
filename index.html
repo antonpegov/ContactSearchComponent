@@ -1,1 +1,25 @@
-<h1>Welcome to contact search component!</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacts Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/babel" src="./components/search.component.jsx"></script>
+    <script type="text/babel" src="./components/search-input.component.jsx"></script>
+    <script type="text/babel" src="./components/search-result.component.jsx"></script>
+    <script type="text/babel" src="./components/search-result-item.component.jsx"></script>
+  </head>
+  <body class="jumbotron">
+    <div id="root"></div>
+    <script type="text/babel">      
+      ReactDOM.render(
+        <Search />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
